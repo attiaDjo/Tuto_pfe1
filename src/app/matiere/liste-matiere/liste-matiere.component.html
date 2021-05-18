@@ -1,0 +1,116 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" style="background-color:#1E90FF;">
+                        <h4 class="card-title"  style="color:white;">Liste de Matiére</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <a routerLink="/ajout-matiére"><button class="btn" style="background-color:#40E0D0;">Ajouter une matiére </button></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Libelé
+                                    </th>
+                                    <th>
+                                        Actions
+                                    </th>
+
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                data-bs-whatever="@getbootstrap"> <i class="material-icons" style = "color:#DC143C;">
+                                                    delete
+                                                </i></a>
+
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                data-bs-whatever="@getbootstrap"> <i class="material-icons" style = "color:#0050ff;">
+                                                    edit
+                                                </i></a>
+                                                
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="exampleModalLabel">Effacer Une Matiére
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+
+                                        <strong>Vous etes sur de supprimer !</strong>
+
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" >Oui</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Non</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--   Modals    edit   -->
+                <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="exampleModalLabel">Modifier Une Matiére
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        
+                                        <input type="text" hidden placeholder="Id" value="" class="form-control"
+                                            id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                    
+                                        <input type="text" class="form-control" value="" placeholder="Libelle"
+                                            aria-label="Last name">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                               
+                                <button type="button" class="btn btn-danger">Modifier</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+
+                    </div>
